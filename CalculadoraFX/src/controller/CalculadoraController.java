@@ -6,15 +6,15 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 
 public class CalculadoraController {
-
+	//controle da calculadora
     @FXML
     private TextField display;
 
     private double num1 = 0;
     private String operador = "";
     private boolean limpar = false;
-
-    // Método para os botões numéricos (0 a 9)
+    
+   //método dos botões 
     @FXML
     private void onNumberClick(ActionEvent event) {
         Button btn = (Button) event.getSource();
@@ -28,7 +28,7 @@ public class CalculadoraController {
         display.appendText(value);
     }
 
-    // Método para os botões de operação (+, -, *, /)
+  //método dos botões 
     @FXML
     private void onOperatorClick(ActionEvent event) {
         Button btn = (Button) event.getSource();
@@ -43,8 +43,8 @@ public class CalculadoraController {
 
         limpar = true;
     }
-
-    // Método para o botão "="
+    
+   //método dos botões 
     @FXML
     private void onEqualsClick(ActionEvent event) {
         try {
@@ -69,7 +69,7 @@ public class CalculadoraController {
         }
     }
 
-    // Método para o botão "C"
+  //método dos botões 
     @FXML
     private void onClearClick(ActionEvent event) {
         display.clear();
@@ -77,8 +77,8 @@ public class CalculadoraController {
         operador = "";
         limpar = false;
     }
-
-    // Métodos matemáticos
+    
+    //métodos matemáticos
     private double soma(double a, double b) {
         return a + b;
     }
