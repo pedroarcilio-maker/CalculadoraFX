@@ -15,6 +15,7 @@ public class Main extends Application {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/telas/telas.fxml"));
             Parent root = loader.load();
 
+            // Definição da tela.
             Scene scene = new Scene(root);
             scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 
