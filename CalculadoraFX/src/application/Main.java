@@ -12,6 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
+            // carrega o arquivo de tela do JavaFX
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/telas/telas.fxml"));
             Parent root = loader.load();
 
