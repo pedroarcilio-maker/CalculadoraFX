@@ -92,6 +92,7 @@ public class CalculadoraController {
     }
 
     private double divisao(double a, double b) {
+		// protege a divisao para o caso do denominador ser 0
         if (b == 0) {
             throw new IllegalArgumentException("Divisão por zero não é permitida.");
         }
